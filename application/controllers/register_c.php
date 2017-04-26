@@ -9,7 +9,7 @@ class register_c extends CI_Controller {
 	}
 
 	function user(){
-		$data['user'] = $this->m_data->ambil_data()->result();
+		$data['looking'] = $this->m_data->ambil_data()->result();
 		$this->load->view('register_v.php',$data);
 	}
 
