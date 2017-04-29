@@ -125,7 +125,7 @@ p a:hover {
 	padding: 45px 40px 46px;
 }
 #body > h2 {
-	color: #21a51e;
+	color: #FFFFFF;
 	font-family: 'nixie_oneregular';
 	font-size: 35px;
 	font-weight: normal;
@@ -454,7 +454,7 @@ width:100%;
 
 body {
    
-    color: #606468;
+    color: #FFFFFF;
   font: 87.5%/1.5em 'Open Sans', sans-serif;
   margin: 0;
 }
