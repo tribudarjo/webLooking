@@ -21,7 +21,7 @@
 <div class="middle">
       <div id="login">
 
-        <form action="javascript:void(0);" method="get">
+        <form action="#" method="get">
 
           <fieldset class="clearfix">
 
