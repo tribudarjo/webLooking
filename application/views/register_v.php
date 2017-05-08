@@ -29,9 +29,6 @@
      <p>
      <input type="submit" name="btnSubmit" value="Daftar" />
      </p>
-	 <p>
-     <input type="submit" name="btnSubmit" value="Kembali" />
-     </p>
      <p>
      Kembali ke beranda
      </p>
