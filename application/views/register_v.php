@@ -5,12 +5,10 @@
    </title>
  </head>
  <body>
-     <h2>Register Looking</h2>
-     <p>Nama:</p>
-     <p>
-     <input type="text" name="name";/>
-     </p>
-     <p>Email:</p>
+     <fieldset class="clearfix">
+
+            <p ><span class="fa fa-user"></span><input type="text" name="username" Placeholder="Username" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+            <p><span class="fa fa-lock"></span><input type="password" name="password" Placeholder="Password" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
      <p>
      <input type="text" name="email" ;/>
      </p>
