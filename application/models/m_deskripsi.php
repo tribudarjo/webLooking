@@ -1,0 +1,14 @@
+<?php if(!defined('BASEPATH')) exit('No direct script access allowed');
+class m_deskripsi extends CI_Model{  
+ function getall(){
+  $ambil_data = $this->db->get('looking');
+  
+  if ($ambil_data->num_rows() > 0 ){
+   foreach ($ambil_data->result() as $data){
+    $hasil[] = $data;
+   }
+   return $hasil;
+  }
+ }
+}
+?>
