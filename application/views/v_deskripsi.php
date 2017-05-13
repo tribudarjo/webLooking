@@ -25,7 +25,7 @@ foreach ($hasil as $data):
  <td> <?php echo $data->nama_mobil; ?> </td>   
  <td> <?php echo $data->harga; ?> </td>  
  <td> <?php echo $data->deskripsi; ?> </td>
- <td> <?php echo $data->gambar_mobil; ?> </td>
+ <td> <?php echo $data->gambar_mobil; ?> <img src="<?php echo 'gambar_mobil' ?>"> </td>
  <td> <?php echo $data->tahun; ?> </td>
  <td> <?php echo $data->nama_rental; ?> </td>
 
