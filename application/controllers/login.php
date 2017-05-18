@@ -2,24 +2,29 @@
 class login extends CI_Controller{
 	public function __construct(){
 		parent::__construct();
-		$this -> load -> database();
-		$this -> load -> model('login_model');
-		$this -> model = $this -> login_model;
+		$this -> load -> model('login_model', 'login');
+		if(!empty($_SESSION['id_user']))
+			redirect('booking');
 	}
 	
 	public function index(){
-		if(isset($_POST['submit'])){
-			$this -> model -> username = $_POST['username'];
-			$this -> model -> password = $_POST['password'];
-			
-			if($this -> model -> authenticate($this -> model -> username, $this -> model -> password)){
-				$this -> load -> view('login_success_view');
+		if($_POST){
+			$result = $this -> login -> validate_user($_POST);
+			if(!empty($result)){
+				$data1 = [
+				'email' => $result -> email,
+				'nama_member' => $result -> username
+				];
+				
+				$this -> session -> set_userdata('id_user',$data1);
+				redirect('booking');
 			} else {
-				$this -> load -> view('login_error_view');
+				$this -> session -> set_flashdata('flash_data','email atau password salah!');
+				redirect('login');
 			}
-		} else {
-			$this -> load -> view('login_form_view', ['model'=> $this -> model]);
 		}
+		$this -> load -> view('login_form_view');
 	}
+		
 }
 ?>
