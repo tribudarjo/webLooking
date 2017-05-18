@@ -3,7 +3,7 @@
  ?><!DOCTYPE html>  
  <head>
    <meta charset="UTF-8">
-   <title>  Pendaftaran Akun  </title>
+   <title>  REGISTER  </title>
  
  <meta charset="UTF-8">
 	<meta name="viewport" content="user-scalable=0, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -13,48 +13,89 @@
 	<script type='text/javascript' src='<?php echo base_url('assets/js/mobile.js')?>'></script>
  
  </head>
+ <head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="assets/css/bootstrap.css">
+
+		<!-- Website CSS style -->
+		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+		<!-- Website Font style -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+		
+		<!-- Google Fonts -->
+		<link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
+		<link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
+</head>
  <body>
-     <h2>Pendaftaran Akun</h2>
+ <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<div class="main">
+ 
+     <center>
+	 <div class="container">
+	 <div class="middle">
+	 <div id="login">
+	             <div class="row">
+
+ <fieldset class="clearfix">
  
      <?php echo form_open('register');?>
      <p>Nama:</p>
      <p>
-     <input type="text" name="nama_member" value="<?php echo set_value('nama_member'); ?>"/>
+	 <span class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></span>
+	<input type="text" name="nama_member" value="<?php echo set_value('nama_member'); ?>"  placeholder="Enter your Name"/>
      </p>
      <p> <?php echo form_error('name'); ?> </p>
  
      <p>Email:</p>
      <p>
-     <input type="text" name="email" value="<?php echo set_value('email'); ?>"/>
+	 <span class="input-group-addon"><i class="fa fa-envelope fa" aria-hidden="true"></i></span>
+     <input type="text" name="email" value="<?php echo set_value('email'); ?>" placeholder="Enter your Email"/>
      </p>
      <p> <?php echo form_error('email'); ?> </p>
 	 
-	   <p>NO Handphone:</p>
+	   <p>Phone:</p>
      <p>
-     <input type="text" name="no_hp" value="<?php echo set_value('no_hp'); ?>"/> 
+	 <span class="input-group-addon"><i class="fa fa-phone" aria-hidden="true"></i></span>
+     <input type="text" name="no_hp" value="<?php echo set_value('no_hp'); ?>" placeholder="Enter your Phone"/> 
      </p>
      <p> <?php echo form_error('no_hp'); ?> </p>
  
      <p>Password:</p>
      <p>
-     <input type="password" name="password" value="<?php echo set_value('password'); ?>"/>
+	 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+     <input type="password" name="password" value="<?php echo set_value('password'); ?>" placeholder="Enter your Password"/>
      </p>
      <p> <?php echo form_error('password'); ?> </p>
  
      <p>Password Confirm:</p>
      <p>
-     <input type="password" name="password_conf" value="<?php echo set_value('password_conf'); ?>"/>
+	 <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+     <input type="password" name="password_conf" value="<?php echo set_value('password_conf'); ?>" placeholder="Confirm your Password"/>
      </p>
      <p> <?php echo form_error('password_conf'); ?> </p>
  
      <p>
      <input type="submit" name="btnSubmit" value="Daftar" />
+	 
      </p>
  
      <?php echo form_close();?>
+	 
  
      <p>
      Kembali ke beranda, Silakan klik <?php echo anchor(site_url().'/beranda','di sini..'); ?>
-     </p>
+     </p></center>
+	 </fieldset>
+	 <div class="clearfix"></div>
+	 </div>
+	 </div>
+	 </div>
+	 </div>
+	 
+	 <div class="logo" img src='../assets/images/FIXX Copy.png' height='250px' width='200px'> 
+
+	 <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+</div>
  </body>
  </html>
