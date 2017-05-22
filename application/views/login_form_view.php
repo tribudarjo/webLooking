@@ -19,17 +19,23 @@
 <center>
 <div class="middle">
       <div id="login">
+	  
+	  <?php if(isset($_SESSION)){
+		  echo $this -> session -> flashdata('flash_data');
+	  }
+		  ?>
 
-        <form action="<?php base_url('login/index')?>" method="post">
+        <form action="<?= site_url('login');?>" method="post">
 
           <fieldset class="clearfix">
 
-            <p ><span class="fa fa-user"></span><input type="text" name="username" Placeholder="Username" required></p> <!-- JS because of IE support; better: placeholder="Username" -->
+            <p ><span class="fa fa-user"></span><input type="text" name="username" Placeholder="Username" required autofocus></p> <!-- JS because of IE support; better: placeholder="Username" -->
             <p><span class="fa fa-lock"></span><input type="password" name="password" Placeholder="Password" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
             
              <div>
-                                <span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text" href="#">Forgot
-                                password?</a></span>
+                                <p>
+								Belum punya akun? Silakan klik <?php echo anchor(site_url().'/register','di sini'); ?>
+								</p>
                                 <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" name="submit" value="Sign In"></span>
                             </div>
 

@@ -15,24 +15,14 @@
 
     <div id="sidebar-wrapper">
         <ul id="sidebar_menu" class="sidebar-nav">
-<<<<<<< HEAD
-           <li class="sidebar-brand"><a id="menu-toggle" href="#">LOOKING<i class="fa fa-home"></i></a></li>
-        </ul>
-        <ul class="sidebar-nav" id="sidebar">
-          <li><a href="#">Member<span class="fa fa-user"></span></a></li>
-          <li><a href="#">Booking<span class="fa fa-car"></span></a></li>
-          <li><a href="#">Contact US<span class="fa fa-search"></span></a></li>
-=======
            <li class="sidebar-brand"><span class="fa fa-home"></span><a href="#"> LOOKING</a></li>
         </ul>
         <ul class="sidebar-nav" id="sidebar">
-		<li>Hai, <?php echo $this -> session -> userdata('username'); ?></li>
+		<li>Hai, <?= $this -> session -> userdata('nama_member') ?></li>
           <li><a href="#"><span class="fa fa-user"></span>  | Pengguna</a></li>
           <li><a href="#"><span class="fa fa-book"></span> | Pemesanan</a></li>
           <li><a href="#"><span class="fa fa-car"></span>  | Daftar Mobil</a></li>
 		  <li><a href="#"><span class="fa fa-envelope"></span>  | Hubungi Kami</a></li>
-		  <li><a href="<?= site_url('booking/logout');?>"><span class="fa fa-sign-out"></span>  | Log Out</a></li>
->>>>>>> f745fc1a879d71e10033d66abfde0bccf283eb6c
         </ul>
       </div>
           
@@ -40,21 +30,12 @@
       
 </div>
 <div class="container">
-<<<<<<< HEAD
-<h1>Booking | LOOKING</h1>
-<form action="<?php echo base_url().'booking/tambah_aksi'; ?>" method="post">
-<table style="margin:20px auto;">
-<tr>
-<td>Mobil</td>
-<td><input type="input" name="nama_mobil"></td>
-=======
 <h1>Penyewaan | LOOKING</h1>
-<form action="<?php echo base_url().'index.php/booking/tambah_aksi'; ?>" method="post">
+<form action="<?php echo base_url().'index.php/Booking2/tambah_aksi'; ?>" method="post">
 <table style="margin:20px auto;">
 <tr>
 <td>Mobil</td>
 <td><input type="input" name="nama_mobil" autofocus="true"></td>
->>>>>>> f745fc1a879d71e10033d66abfde0bccf283eb6c
 </tr>
 <tr>
 <td>Tanggal Sewa</td>
@@ -117,13 +98,10 @@
 	</td>
 </tr>
 <tr>
-<<<<<<< HEAD
-=======
 <td>Harga</td>
 <td><input type="text" name="harga" disabled="true"><td>
 </tr>
 <tr>
->>>>>>> f745fc1a879d71e10033d66abfde0bccf283eb6c
 <td align="center" colspan="3"><input type="submit" name="submit" value="Booking"></td>
 </tr>
 </table>
