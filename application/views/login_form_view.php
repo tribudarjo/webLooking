@@ -34,8 +34,9 @@
             <p><span class="fa fa-lock"></span><input type="password" name="password" Placeholder="Password" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
             
              <div>
-                                <span style="width:48%; text-align:left;  display: inline-block;"><a class="small-text" href="#">Forgot
-                                password?</a></span>
+                                <p>
+								Belum punya akun? Silakan klik <?php echo anchor(site_url().'/register','di sini'); ?>
+								</p>
                                 <span style="width:50%; text-align:right;  display: inline-block;"><input type="submit" name="submit" value="Sign In"></span>
                             </div>
 
