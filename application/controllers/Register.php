@@ -24,7 +24,7 @@
              $data['nama_member']   =    $this->input->post('nama_member');
              $data['email']  =    $this->input->post('email');
 			 $data['no_hp'] =    $this->input->post('no_hp');
-             $data['password'] =    $this->input->post('password');
+             $data['password'] =    ($this->input->post('password'));
  
              $this->m_account->daftar($data);
              

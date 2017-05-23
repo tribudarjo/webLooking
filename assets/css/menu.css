@@ -12,7 +12,11 @@
 #sidebar-wrapper {
     margin-left: -150px;
     left: 70px;
+<<<<<<< HEAD
+    width: 150px;
+=======
     width: 200px;
+>>>>>>> f745fc1a879d71e10033d66abfde0bccf283eb6c
     background: #222;
     position: fixed;
     height: 100%;
@@ -23,7 +27,11 @@
 .sidebar-nav {
     display: block;
     float: left;
+<<<<<<< HEAD
+    width: 150px;
+=======
     width: 200px;
+>>>>>>> f745fc1a879d71e10033d66abfde0bccf283eb6c
     list-style: none;
     margin: 0;
     padding: 0;
@@ -35,7 +43,11 @@
     height: auto;
 }
 #wrapper.active {
+<<<<<<< HEAD
+    padding-left: 150px;
+=======
     padding-left: 250px;
+>>>>>>> f745fc1a879d71e10033d66abfde0bccf283eb6c
 }
 #wrapper.active #sidebar-wrapper {
     left: 150px;
@@ -50,7 +62,11 @@
     display: block;
     float: left;
     text-decoration: none;
+<<<<<<< HEAD
+    width: 150px;
+=======
     width: 200px;
+>>>>>>> f745fc1a879d71e10033d66abfde0bccf283eb6c
     background: #252525;
     border-top: 1px solid #373737;
     border-bottom: 1px solid #1A1A1A;

@@ -582,3 +582,10 @@ fieldset{
   display: flex;
   width: 600px;
 }
+
+/* ---------- SIGNUP ---------- */
+#daftar{
+border-right:1px solid #fff;
+  padding: 0px 22px;
+  width: 59%;
+}
