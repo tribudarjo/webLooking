@@ -1,19 +1,11 @@
 <?php
-class login_model extends CI_model {
-	
-	function __construct(){
-		parent::__construct();
-		$this -> load -> database();
-	}
- 
-	public function validate_user($data){
-		$this -> db -> where('email', $data['username']);
-		$this -> db -> where('password', $data['password']);
-		return $this -> db -> get('member') -> row();
+class login_model extends CI_model { 
+	public function login(){
+		$sql = "SELECT*FROM member WHERE email='$this->email' AND password='$this->password'";
+		$query = $this->db->query($sql);
+		return $query->num_rows();
 	}
 	
-	function __destruct(){
-		$this -> db -> close();
-	}
+
 }
 ?>

@@ -1,3 +1,5 @@
+<?php
+?>
 <html>
 <head>
 <title>Booking | LOOKING</title>
@@ -18,12 +20,12 @@
            <li class="sidebar-brand"><span class="fa fa-home"></span><a href="#"> LOOKING</a></li>
         </ul>
         <ul class="sidebar-nav" id="sidebar">
-		<li>Hai, <?php echo $this -> session -> userdata('username'); ?></li>
-          <li><a href="#"><span class="fa fa-user"></span>  | Pengguna</a></li>
-          <li><a href="#"><span class="fa fa-book"></span> | Pemesanan</a></li>
-          <li><a href="#"><span class="fa fa-car"></span>  | Daftar Mobil</a></li>
-		  <li><a href="#"><span class="fa fa-envelope"></span>  | Hubungi Kami</a></li>
-		  <li><a href="<?= site_url('booking/logout');?>"><span class="fa fa-sign-out"></span>  | Log Out</a></li>
+		<li>Hai, <?php echo $_SESSION['email']; ?></li>
+          <li><a href="#"><span class="fa fa-user"></span> Pengguna</a></li>
+          <li><a href="#"><span class="fa fa-book"></span> Pemesanan</a></li>
+          <li><a href="#"><span class="fa fa-car"></span> Daftar Mobil</a></li>
+<!--		  <li><a href="#"><span class="fa fa-envelope"></span> Hubungi Kami</a></li>-->
+		  <li><a href="<?= site_url('login/logout');?>"><span class="fa fa-sign-out"></span> Log Out</a></li>
         </ul>
       </div>
           
@@ -104,6 +106,7 @@
 </tr>
 <tr>
 <td align="center" colspan="3"><input type="submit" name="submit" value="Booking"></td>
+<!--<td><?php echo $_SESSION['id_user'];?> </td>-->
 </tr>
 </table>
 </form>

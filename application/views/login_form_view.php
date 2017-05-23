@@ -21,16 +21,13 @@
 <div class="middle">
       <div id="login">
 	  
-	  <?php if(isset($_SESSION)){
-		  echo $this -> session -> flashdata('flash_data');
-	  }
-		  ?>
+	 
 
-        <form action="<?= site_url('login');?>" method="post">
+        <form action="<?= site_url('login/login');?>" method="post">
 
           <fieldset class="clearfix">
 
-            <p ><span class="fa fa-user"></span><input type="text" name="username" Placeholder="Username" required autofocus></p> <!-- JS because of IE support; better: placeholder="Username" -->
+            <p ><span class="fa fa-user"></span><input type="text" name="email" Placeholder="Username" required autofocus></p> <!-- JS because of IE support; better: placeholder="Username" -->
             <p><span class="fa fa-lock"></span><input type="password" name="password" Placeholder="Password" required></p> <!-- JS because of IE support; better: placeholder="Password" -->
             
              <div>
