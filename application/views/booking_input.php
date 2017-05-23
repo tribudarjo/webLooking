@@ -101,13 +101,10 @@
 	</td>
 </tr>
 <tr>
-<<<<<<< HEAD
-=======
 <td>Harga</td>
 <td><input type="text" name="harga" disabled="true"><td>
 </tr>
 <tr>
->>>>>>> f745fc1a879d71e10033d66abfde0bccf283eb6c
 <td align="center" colspan="3"><input type="submit" name="submit" value="Booking"></td>
 <!--<td><?php echo $_SESSION['id_user'];?> </td>-->
 </tr>
