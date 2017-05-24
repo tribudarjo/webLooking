@@ -1,10 +1,15 @@
 <?php
 class booking extends CI_Controller{
 	public $model = NULL;
+	public $member = NULL;
 	function __construct(){
 		parent::__construct();
 		$this->load->model('login_model');
 		$this-> model = $this->login_model;
+				//$this -> load -> model('model_booking');
+		/*$model_booking = $this -> load -> model('model_booking');
+		$result = $model_booking ->member;
+		$this -> member[] = $result;*/
 	}
 	
 	public function index(){
@@ -29,7 +34,7 @@ class booking extends CI_Controller{
 		}
 	}
 	function tambah_aksi(){
-		
+
 		$mobil = $this -> input -> post('nama_mobil');
 		$tanggal_sewa = $this -> input -> post('tgl_sewa');
 		$waktu_sewa_jam = $this -> input -> post('waktu_sewa_jam');
@@ -39,7 +44,7 @@ class booking extends CI_Controller{
 		$waktu_kembali_jam = $this -> input -> post('waktu_kembali_jam');
 		$waktu_kembali_menit = $this -> input -> post('waktu_kembali_menit');
 		$waktu_kembali = $waktu_kembali_jam.":".$waktu_kembali_menit;
-		//$id_member = $_SESSION['id_member'];
+		//$id_member = $this -> member;
 		$data1 = array(
 		'id_mobil' => $mobil,
 		//'id_member' => $id_member,

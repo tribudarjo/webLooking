@@ -6,6 +6,7 @@ class login_model extends CI_model {
 		return $query->num_rows();
 	}
 	
+	
 
 }
 ?>
