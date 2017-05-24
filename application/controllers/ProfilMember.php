@@ -9,6 +9,21 @@ Class ProfilMember extends CI_Controller {
  function index(){
   $data['hasil'] = $this->m_ProfilMember->getall();
   $this->load->view('v_ProfilMember', $data);
- }
+		
+	}
+	
+	public function create(){
+		if(isset($_POST['btnSubmit'])){
+			
+			$this->model->nama_member = $_POST['nama_member'];
+			$this->model->email = $_POST['email'];
+			$this->model->no_hp = $_POST['no_hp'];
+			
+			$this->model->insert();
+			
+		}else{
+			$this->load->view('v_ProfilMember', ['model'=>$this->model]);
+		}
+	}
 }
 ?>
