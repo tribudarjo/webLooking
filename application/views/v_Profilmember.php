@@ -11,16 +11,18 @@ else {
 <body>
 <div class="container">
 <h1 class="w3-animate-top">Profil Member |<i class="fa fa-car" style="font-size:24px" ></i></h1><br/><br/>
-<table>
 
-<table class="table table-condensed">
-    <thead>
-      <tr>
- <th> Nama Member </th>
- <th> Email </th>
- <th> No HP </th>
-</tr>
-    </thead>
+			
+			<form action="http://localhost/WebLooking/index.php/ProfilMember" method="post">
+			Nama : <input type ="text" name="nama_member"/> <br> 
+			Email : <input type ="text" name="email"/><br>
+			No HP : <input type ="text" name="no_hp"/><br><br>
+			<input type="submit" name="btnsubmit" value="Edit Profil">
+			<input type="submit" name="btnsubmit" value="Batal">
+			</form> 
+			
+			
+	
 </div>
 <?php
 $id = 1;
