@@ -41,7 +41,7 @@
 <table style="margin:20px auto;">
 <tr>
 <td>Mobil</td>
-<td><select name="nama_mobil"></td>
+<td><input type="text" name="nama_mobil"></td>
 </tr>
 <tr>
 <td>Tanggal Sewa</td>
@@ -112,6 +112,7 @@
 <!--<td><?php echo $_SESSION['id_user'];?> </td>-->
 </tr>
 </table>
+<input type="text" name="id_member" hidden="true" value="<?php foreach($rows as $row){echo $row -> id_member;}?>">
 </form>
 </div>
 </body>

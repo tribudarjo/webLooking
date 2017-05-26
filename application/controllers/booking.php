@@ -2,6 +2,7 @@
 class booking extends CI_Controller{
 	public $model = NULL;
 	public $model_booking = NULL;
+	//session_start();
 	//public $id_member;
 	function __construct(){
 		parent::__construct();
@@ -25,8 +26,8 @@ class booking extends CI_Controller{
 				unset($_SESSION['email']);
 				unset($_SESSION['password']);
 			}else{
-				
-				$this->load->view('booking_input');
+				$rows = $this -> model -> read();
+				$this->load->view('booking_input', ['rows'=>$rows]);
 			}
 		}else{
 			 $this->data['mobil'] = $this->model_booking->get();
@@ -43,7 +44,7 @@ class booking extends CI_Controller{
 		$waktu_kembali_jam = $this -> input -> post('waktu_kembali_jam');
 		$waktu_kembali_menit = $this -> input -> post('waktu_kembali_menit');
 		$waktu_kembali = $waktu_kembali_jam.":".$waktu_kembali_menit;
-
+		$id_member = $this -> input -> post('id_member');
 		$data1 = array(
 		'id_mobil' => $mobil,
 		'id_member' => $id_member,
