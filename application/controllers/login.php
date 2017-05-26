@@ -25,7 +25,8 @@ class login extends CI_Controller{
 			}else{
 				$_SESSION['email'] = $_REQUEST['email'];
 				$_SESSION['password'] = $_REQUEST['password'];
-				redirect('booking');
+				$rows = $this -> model -> read();
+				$this -> load -> view('booking_input', ['rows'=>$rows]);
 			}
 		}else{
 			redirect('login');
