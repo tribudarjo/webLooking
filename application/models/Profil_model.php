@@ -51,6 +51,7 @@
 					'id_member'=>'id_member: ',
 					'nama_member'=>'nama_member: ',
 					'email'=>'email: ',
+					'no_hp'=>'no_hp: ',
 					'password'=>'password: ',
 					'id_member'=>'id_member: '
 				];

@@ -57,6 +57,7 @@ class Profil extends CI_Controller{
 			$this->load->view('profil/Profil_update_view.php', ['model'=>$this->model]);
 		}
 	}
+	
 }
 
 
