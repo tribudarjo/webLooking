@@ -14,7 +14,7 @@
 			no_hp :<input type="text" name="no_hp" value=<?php echo $data->no_hp ?>> <br>
 			password :<input type="password" name="password" value=<?php echo $data->password ?>> <br> <br>
 			
-			<td align="center"><a href="profil/update/<?php echo $data->id_member;?>">Edit</a> <br>
+			<a href="profil/update/<?php echo $data->id_member;?>"> <input type="submit" name="btnsubmit" value="Edit"></a> <br>
 			
 			
 		</tr>
