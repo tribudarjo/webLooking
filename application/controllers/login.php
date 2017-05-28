@@ -34,7 +34,7 @@ class login extends CI_Controller{
 	}
 	
 	public function pindah_pengguna(){
-		redirect('ProfilMember');
+		redirect('Profil');
 	}
 	
 	public function pindah_booking(){
