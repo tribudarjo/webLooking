@@ -10,7 +10,7 @@
 		<input type="text" name="id_member" size="10" maxlength="10"/><br/><br/>
 		
 		<?php echo $model->labels['nama_member'];?><br/>
-		<input type="text" name="nama" size="30" maxlength="25"/><br/><br/>
+		<input type="text" name="nama_member" size="30" maxlength="25"/><br/><br/>
 		
 		<?php echo $model->labels['email'];?><br/>
 		<input type="text" name="email"><br/><br/>
