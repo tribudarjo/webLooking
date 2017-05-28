@@ -17,7 +17,7 @@
 			}
 			
 			public function insert(){
-				$sql = sprintf("insert into member values ('%s','%s','%e','%f','%d')",
+				$sql = sprintf("insert into member values ('%s','%s','%s','%s','%s')",
 						$this->id_member,
 						$this->nama_member,  
 						$this->email,  
@@ -29,7 +29,7 @@
 			}
 				
 			public function update(){
-				$sql = sprintf("update member set nama_member='%s', email=%e, no_hp=%f, password=%d where id_member='%s'",
+				$sql = sprintf("update member set nama_member='%s', email='%s', no_hp='%s', password='%s' where id_member='%s'",
 						$this->nama_member, 
 						$this->email,
 						$this->no_hp,
