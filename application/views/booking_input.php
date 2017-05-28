@@ -24,9 +24,9 @@
 			echo $row -> nama_member;
 		}
 		?></li>
-          <li><a href="<?php site_url('index.php/ProfilMember');?>"><span class="fa fa-user"></span> Pengguna</a></li>
-          <li><a href="<?php //redirect('booking');?>"><span class="fa fa-book"></span> Pemesanan</a></li>
-          <li><a href="#"><span class="fa fa-car"></span> Daftar Mobil</a></li>
+          <li><a href="<?= site_url('login/pindah_pengguna');?>"><span class="fa fa-user"></span> Pengguna</a></li>
+          <li><a href="<?= site_url('login/pindah_booking');?>"><span class="fa fa-book"></span> Pemesanan</a></li>
+          <li><a href="<?= site_url('login/pindah_list');?>"><span class="fa fa-car"></span> Daftar Mobil</a></li>
 <!--		  <li><a href="#"><span class="fa fa-envelope"></span> Hubungi Kami</a></li>-->
 		  <li><a href="<?= site_url('login/logout');?>"><span class="fa fa-sign-out"></span> Log Out</a></li>
         </ul>
