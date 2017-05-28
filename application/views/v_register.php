@@ -83,7 +83,7 @@
 	 
  
      <p>
-     Kembali ke beranda, Silakan klik <?php echo anchor(site_url().'/beranda','di sini..'); ?>
+     Kembali ke menu login, Silakan klik <?php echo anchor(site_url().'/login','di sini..'); ?>
      </p>
  <div class="clearfix"></div>
 
