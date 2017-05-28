@@ -33,6 +33,18 @@ class login extends CI_Controller{
 		}
 	}
 	
+	public function pindah_pengguna(){
+		redirect('ProfilMember');
+	}
+	
+	public function pindah_booking(){
+		redirect('booking');
+	}
+	
+	public function pindah_list(){
+		redirect('Deskripsi');
+	}
+	
 	public function logout(){
 		unset($_SESSION['email']);
 		unset($_SESSION['password']);
