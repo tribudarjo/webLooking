@@ -78,8 +78,8 @@ class Profil extends CI_Controller{
 			}else{
 				$rows = $this -> user -> read();
 				$this->load->view('menu', ['rows'=>$rows]);
-						$data = $this->model->read();
-		$this->load->view('profil/Profil_read_view', ['data'=>$data]);
+				$data = $this->model->read();
+				$this->load->view('profil/Profil_read_view', ['data'=>$data]);
 			}
 		}else{
 			$this->load->view('login_form_view');

@@ -41,7 +41,7 @@
 			}
 			
 			public function read(){
-				$email=$this  -> email;
+				$email = $_SESSION['email'];
 				$sql = "select * from member WHERE email='$email'";
 				$query = $this->db->query($sql);
 				return $query->result();
