@@ -13,11 +13,9 @@
 <body>
 	<h3> PROFIL MEMBER</h3>
 	<?php
-			foreach($data as $data){
+			//foreach($data as $data){
 		?>
-		
-		<br>
-			ID Member  <input type="text" name="id_member" value=<?php echo $data->id_member; ?>> <br>
+			ID Member  <input type="text" name="id_member" value="<?php echo $data->id_member; ?>"> <br>
 			Nama Member <input type="text" name="nama_member" value=<?php echo $data->nama_member; ?>> <br>
 			Email <input type="text" name="email" value=<?php echo $data->email; ?>> <br>
 			No HP <input type="text" name="no_hp" value=<?php echo $data->no_hp; ?>> <br>
@@ -28,7 +26,7 @@
 			
 		</tr>
 		<?php
-			}
+			//}
 			?>
 		</table>
 </body>
