@@ -1,9 +1,14 @@
 <html>
 <head>
 <title>PROFIL MEMBER</title>
+<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css')?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/mobile.css')?>">
+	<script type='text/javascript' src='<?php echo base_url('assets/js/mobile.js')?>'></script>
 </head>
 <body>
-	<h2>EDIT PROFIL MEMBER</h2>
+	<center><h2>EDIT PROFIL MEMBER</h2>
+	<div class="logo"> <img src='../assets/images/FIXX Copy.png' height='150px' width='150px'>
+	</div>
 	<?php
 			foreach($data as $data){
 		?>
@@ -22,5 +27,6 @@
 			}
 			?>
 		</table>
+		</center>
 </body>
 </html>

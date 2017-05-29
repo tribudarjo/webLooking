@@ -42,6 +42,7 @@ class login extends CI_Controller{
 	}
 	
 	public function pindah_list(){
+		$rows = $this -> model -> read();
 		redirect('Deskripsi');
 	}
 	
