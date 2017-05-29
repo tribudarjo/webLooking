@@ -10,11 +10,10 @@
 	<p><strong>Edit Profil member</strong></p>
 	
 	<form action="create" method="POST">
-		<?php echo $model->labels['id_member'];?><br/>
-		<input type="text" name="id_member" size="10" maxlength="10" value="<?php echo  $model->id_member;?>"/><br/>
+		
 		
 		<?php echo $model->labels['nama_member'];?><br/>
-		<input type="text" name="nama_member" size="30" maxlength="25" value="<?php echo  $model->nama_member;?>"/><br/>
+		<input type="text" name="nama_member" value="<?php echo  $model->nama_member;?>"/><br/>
 		
 		<?php echo $model->labels['email'];?><br/>
 		<input type="text" name="email"value="<?php echo $model->email;?>"><br/>

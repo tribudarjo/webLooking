@@ -12,36 +12,17 @@
 </head>
 <body>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-<div id="wrapper" class="active">  
 
-    <div id="sidebar-wrapper">
-        <ul id="sidebar_menu" class="sidebar-nav">
-           <li class="sidebar-brand"><span class="fa fa-home"></span><a href="#"> LOOKING</a></li>
-        </ul>
-        <ul class="sidebar-nav" id="sidebar">
-		<li>Hai, <?php
-		foreach($rows as $row){
-			echo $row -> nama_member;
-		}
-		?></li>
-          <li><a href="<?= site_url('login/pindah_pengguna');?>"><span class="fa fa-user"></span> Pengguna</a></li>
-          <li><a href="<?= site_url('login/pindah_booking');?>"><span class="fa fa-book"></span> Pemesanan</a></li>
-          <li><a href="<?= site_url('login/pindah_list');?>"><span class="fa fa-car"></span> Daftar Mobil</a></li>
-<!--		  <li><a href="#"><span class="fa fa-envelope"></span> Hubungi Kami</a></li>-->
-		  <li><a href="<?= site_url('login/logout');?>"><span class="fa fa-sign-out"></span> Log Out</a></li>
-        </ul>
-      </div>
-          
-     
-      
-</div>
 <div class="container">
 <h1>Penyewaan | LOOKING</h1>
 <form action="<?php echo base_url().'index.php/booking/tambah_aksi';?>" method="post">
 <table style="margin:20px auto;">
 <tr>
 <td>Mobil</td>
-<td><input type="text" name="nama_mobil"></td>
+<td><select name="nama_mobil">
+<?php foreach($data_mobil as $data_mobil){
+	?>
+<option value="<?php echo $data_mobil ->id_mobil ?>"><?php echo $data_mobil -> nama_mobil ?></option><?php } ?></select></td>
 </tr>
 <tr>
 <td>Tanggal Sewa</td>

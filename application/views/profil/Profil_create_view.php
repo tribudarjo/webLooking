@@ -10,10 +10,10 @@
 
 	<form action="create" method="POST">
 		<?php echo $model->labels['id_member'];?><br/>
-		<input type="text" name="id_member" size="10" maxlength="10"/><br/><br/>
+		<input type="text" name="id_member"><br/><br/>
 		
 		<?php echo $model->labels['nama_member'];?><br/>
-		<input type="text" name="nama_member" size="30" maxlength="25"/><br/><br/>
+		<input type="text" name="nama_member"><br/><br/>
 		
 		<?php echo $model->labels['email'];?><br/>
 		<input type="text" name="email"><br/><br/>
