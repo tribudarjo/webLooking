@@ -27,10 +27,11 @@ class booking extends CI_Controller{
 				unset($_SESSION['password']);
 			}else{
 				$rows = $this -> model -> read();
-				$this->load->view('booking_input', ['rows'=>$rows]);
+				$data_mobil = $this -> model_booking -> read();
+				$this->load->view('menu', ['rows'=>$rows]);
+				$this->load->view('booking_input', ['rows'=>$rows, 'data_mobil'=>$data_mobil]);
 			}
 		}else{
-			 $this->data['mobil'] = $this->model_booking->get();
 			$this->load->view('login_form_view',$this -> data);
 		}
 	}

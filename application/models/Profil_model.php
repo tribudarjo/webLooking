@@ -41,7 +41,7 @@
 			}
 			
 			public function read(){
-				$sql = "select * from member order by id_member";
+				$sql = "select * from member WHERE email='$this  -> email'";
 				$query = $this->db->query($sql);
 				return $query->result();
 			}

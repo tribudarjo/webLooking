@@ -12,14 +12,20 @@ else {
 	
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css')?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/mobile.css')?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/menu.css')?>">
 	<script type='text/javascript' src='<?php echo base_url('assets/js/mobile.js')?>'></script>
+		<script type='text/javascript' src='<?php echo base_url('assets/js/menu.js')?>'></script>
+
 </head>
 <body>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <div class="w3-container">
-<h2>Daftar Mobil</h2>
-
+<br>
+<br>
+<h1>Daftar Mobil</h1>
+<br>
 <div class="col-md-5 col-sm-4 col-xs-6"> 
-    <table width="80%" class="w3-table"> 
+    <table width="80%" align="right" class="w3-table"> 
 	<style>
   table {
     border-collapse: collapse;
@@ -32,8 +38,6 @@ th, td {
     border-bottom: 2px solid #ddd;
 }
 </style>
-</head>
-    <thead>
       <tr>
  <th> Gambar Mobil </th>
  <th> Nama Mobil </th>
