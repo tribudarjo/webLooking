@@ -1,9 +1,12 @@
 <html>
 <head>
 	<title> PROFIL MEMBER </title>
-<head>
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css')?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/mobile.css')?>">
+	<script type='text/javascript' src='<?php echo base_url('assets/js/mobile.js')?>'></script>
+</head>
 <body>
-	<h2> PROFIL MEMBER</h2>
+	<center><h2> PROFIL MEMBER</h2>
 	<p><strong>Edit Profil member</strong></p>
 	
 	<form action="create" method="POST">
@@ -24,6 +27,7 @@
 		<input type="submit" name="btnSubmit" value="Simpan"/>
 		<input type="button" value="Batal" onclick="javascript:history.go(-1);"/>
 	</form>
+	</center>
 </body>
 </html>
 		

@@ -3,6 +3,7 @@ class Profil extends CI_Controller{
 
 	public $model = NULL;
 	public $Profil_model = NULL;
+	public $user = NULL;
 	
 	public function __construct(){
 		parent::__construct();
@@ -11,7 +12,8 @@ class Profil extends CI_Controller{
 		
 		$this->load->database();
 		$this->load->helper('url'); //sebagai redirect
-	
+		$this->load->model('login_model');
+		$this-> user = $this->login_model;
 	
 	//session_start();
 		$this->model = $this->Profil_model;
@@ -65,8 +67,23 @@ class Profil extends CI_Controller{
 	}
 	
 	public function read(){
-		$data = $this->model->read();
-		$this->load->view('profil/Profil_read_view.php', ['data'=>$data]);
+		if(isset($_SESSION['email']) && isset($_SESSION['password'])){
+			$this->user->email = $_SESSION['email'];
+			$this->user->password = $_SESSION['password'];
+			$cek = $this->user->login();
+			if($cek == 0){
+				$this->load->view('login_form_view');
+				unset($_SESSION['email']);
+				unset($_SESSION['password']);
+			}else{
+				$rows = $this -> user -> read();
+				$this->load->view('menu', ['rows'=>$rows]);
+						$data = $this->model->read();
+		$this->load->view('profil/Profil_read_view', ['data'=>$data]);
+			}
+		}else{
+			$this->load->view('login_form_view');
+		}
 	}
 	
 	public function update ($id_member){

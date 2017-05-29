@@ -26,7 +26,8 @@ class login extends CI_Controller{
 				$_SESSION['email'] = $_REQUEST['email'];
 				$_SESSION['password'] = $_REQUEST['password'];
 				$rows = $this -> model -> read();
-				$this -> load -> view('booking_input', ['rows'=>$rows]);
+				redirect('booking');
+				//$this -> load -> view('booking_input', ['rows'=>$rows]);
 			}
 		}else{
 			redirect('login');
@@ -42,6 +43,7 @@ class login extends CI_Controller{
 	}
 	
 	public function pindah_list(){
+		$rows = $this -> model -> read();
 		redirect('Deskripsi');
 	}
 	
