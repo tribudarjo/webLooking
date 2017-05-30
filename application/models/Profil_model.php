@@ -47,6 +47,11 @@
 				return $query->result();
 			}
 			
+			public function delete(){
+				$sql = sprintf("DELETE FROM member where id_member = '%s'", $this -> id_member);
+		$this -> db -> query($sql);
+			}
+			
 			private function _attributeLabels(){
 				return [
 					'id_member'=>'ID Member: ',
