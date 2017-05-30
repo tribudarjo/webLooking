@@ -9,8 +9,9 @@
 	<center><h2> PROFIL MEMBER</h2>
 	<p><strong>Edit Profil member</strong></p>
 	
-	<form action="create" method="POST">
+	<form action="<?php site_url('Profil/update');?>" method="POST">
 		
+		<input type="hidden" name="id_member" value="<?php echo  $model->id_member;?>"/><br/>
 		
 		<?php echo $model->labels['nama_member'];?><br/>
 		<input type="text" name="nama_member" value="<?php echo  $model->nama_member;?>"/><br/>
