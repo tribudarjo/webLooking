@@ -49,12 +49,11 @@
 			
 			private function _attributeLabels(){
 				return [
-					'id_member'=>'id_member: ',
-					'nama_member'=>'nama_member: ',
-					'email'=>'email: ',
-					'no_hp'=>'no_hp: ',
-					'password'=>'password: ',
-					'id_member'=>'id_member: '
+					'id_member'=>'ID Member: ',
+					'nama_member'=>'Nama Member: ',
+					'email'=>'E-mail: ',
+					'no_hp'=>'No HP: ',
+					'password'=>'Password: '
 				];
 			}
 		}
