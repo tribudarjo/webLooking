@@ -10,39 +10,20 @@ else {
 <head>
 	<title>Daftar Mobil</title>
 	
-	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css')?>">
+		<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/style.css')?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/menu.css')?>">
 	<link rel="stylesheet" type="text/css" href="<?php echo base_url('assets/css/mobile.css')?>">
 	<script type='text/javascript' src='<?php echo base_url('assets/js/mobile.js')?>'></script>
+		<script type='text/javascript' src='<?php echo base_url('assets/js/menu.js')?>'></script>
 </head>
 <body>
-<div id="wrapper" class="active">  
-
-    <div id="sidebar-wrapper">
-        <ul id="sidebar_menu" class="sidebar-nav">
-           <li class="sidebar-brand"><span class="fa fa-home"></span><a href="#"> LOOKING</a></li>
-        </ul>
-        <ul class="sidebar-nav" id="sidebar">
-		<!--<li>Hai, <?php/*
-		foreach($rows as $row){
-			echo $row -> nama_member;
-		}*/
-		?></li>-->
-          <li><a href="<?= site_url('login/pindah_pengguna');?>"><span class="fa fa-user"></span> Pengguna</a></li>
-          <li><a href="<?= site_url('login/pindah_booking');?>"><span class="fa fa-book"></span> Pemesanan</a></li>
-          <li><a href="<?= site_url('login/pindah_list');?>"><span class="fa fa-car"></span> Daftar Mobil</a></li>
-<!--		  <li><a href="#"><span class="fa fa-envelope"></span> Hubungi Kami</a></li>-->
-		  <li><a href="<?= site_url('login/logout');?>"><span class="fa fa-sign-out"></span> Log Out</a></li>
-        </ul>
-      </div>
-          
-     
-      
-</div>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <div class="w3-container">
-<h2>Daftar Mobil</h2>
+<br>
+<h1>Daftar Mobil</h1>
 
 <div class="col-md-5 col-sm-4 col-xs-6"> 
-    <table width="80%" class="w3-table"> 
+    <table width="100%" class="w3-table"> 
 	<style>
   table {
     border-collapse: collapse;
@@ -55,7 +36,7 @@ th, td {
     border-bottom: 2px solid #ddd;
 }
 </style>
-</head>
+<br><br>
     <thead>
       <tr>
  <th> Gambar Mobil </th>
@@ -74,7 +55,7 @@ foreach ($hasil as $data):
 ?>
 
 <tr>
- <td>  <img src="<?php echo base_url($data->gambar_mobil) ?>"> </td>
+ <td>  <img width="200px" height="150px" src="<?php echo base_url($data->gambar_mobil) ?>"> </td>
  <td> <?php echo $data->nama_mobil; ?> </td>
  <td> <?php echo $data->harga; ?> </td>  
  <td> <?php echo $data->deskripsi; ?> </td>

@@ -57,7 +57,7 @@ class booking extends CI_Controller{
 		
 		$this -> load -> model('Model_booking');
 		$this -> Model_booking -> input_data($data1,'booking');	
-		redirect('booking/index');
+		redirect('konfirmasi');
 	}
 
 	
