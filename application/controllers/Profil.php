@@ -52,7 +52,7 @@ class Profil extends CI_Controller{
 		}
 	}
 	
-	public function create(){
+/*	public function create(){
 		if(isset($_POST['btnSubmit'])){
 			$this->model->id_member = $_POST['id_member'];
 			$this->model->nama_member = $_POST['nama_member'];
@@ -65,7 +65,7 @@ class Profil extends CI_Controller{
 			$this->load->view('profil/Profil_create_view.php', ['model'=>$this->model]);
 		}
 	}
-	
+*/	
 	public function read(){
 		if(isset($_SESSION['email']) && isset($_SESSION['password'])){
 			$this->user->email = $_SESSION['email'];

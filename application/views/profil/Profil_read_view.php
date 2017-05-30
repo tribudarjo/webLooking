@@ -9,20 +9,16 @@
 	<center><h2>EDIT PROFIL MEMBER</h2>
 	<div class="logo"> <img src='../assets/images/FIXX Copy.png' height='150px' width='150px'>
 	</div>
+	<table align="center">
 	<?php
 			foreach($data as $data){
 		?>
-		<br>
-			id_member : <input type="text" name="id_member" value="<?php echo $data->id_member; ?>"/> <br>
-			nama_member :<input type="text" name="nama_member" value=<?php echo $data->nama_member; ?>> <br>
-			email :<input type="text" name="email" value=<?php echo $data->email; ?>> <br>
-			no_hp :<input type="text" name="no_hp" value=<?php echo $data->no_hp; ?>> <br>
-			password :<input type="password" name="password" value=<?php echo $data->password; ?>> <br> <br>
-			
-			<a href="profil/update/<?php echo $data->id_member;?>"> <input type="submit" name="btnsubmit" value="Edit"></a> <br>
-			
-			
-		</tr>
+		<tr>
+		<td>Nama_member</td><td>:</td><td><input type="text" disabled="true" name="nama_member" value="<?php echo $data->nama_member; ?>"></td></tr>
+		<tr><td>E-mail</td><td>:</td><td><input type="text" disabled="true" name="email" value="<?php echo $data->email; ?>"></td></tr>
+		<tr><td>No HP</td><td>:</td><td><input type="text" disabled="true" name="no_hp" value="<?php echo $data->no_hp; ?>"></td></tr>
+		<tr><td>Password</td><td>:</td><td><input type"password" disabled="true" name="password" value="<?php echo $data->password; ?>"></td></tr>
+		<tr><td colspan="3" align="center"><a href="profil/update/<?php echo $data->id_member;?>"><input type="submit" name="btnsubmit" value="Edit"></a> </tr>
 		<?php
 			}
 			?>
