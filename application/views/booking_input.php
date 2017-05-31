@@ -85,10 +85,6 @@
 	</td>
 </tr>
 <tr>
-<td>Harga</td>
-<td><input type="text" name="harga" disabled="true"><td>
-</tr>
-<tr>
 <td align="center" colspan="3"><input type="submit" name="submit" value="Booking"></td>
 <!--<td><?php echo $_SESSION['id_user'];?> </td>-->
 </tr>
