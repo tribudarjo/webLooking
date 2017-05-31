@@ -16,7 +16,7 @@
 <div class="container">
 <center>
 <h2>Konfirmasi</h2>
-<div class="logo"> <img src='../assets/images/FIXX Copy.png' height='150px' width='150px'>
+<div class="logo"> <img src='../assets/images/FIXX_Copy.png' height='150px' width='150px'>
 	</div>
 <table>
  <?php
