@@ -16,7 +16,7 @@
 <div class="container">
 <center>
 <h2>Penyewaan</h2>
-<div class="logo"> <img src='../assets/images/FIXX Copy.png' height='150px' width='150px'>
+<div class="logo"> <img src='../assets/images/FIXX_Copy.png' height='150px' width='150px'>
 	</div>
 <form action="<?php echo base_url().'index.php/booking/tambah_aksi';?>" method="post">
 <table style="margin:20px auto;">

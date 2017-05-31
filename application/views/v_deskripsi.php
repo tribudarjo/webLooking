@@ -22,7 +22,7 @@ else {
 <br>
 <center>
 <h2>Daftar Mobil</h2>
-<div class="logo"> <img src='../assets/images/FIXX Copy.png' height='150px' width='150px'>
+<div class="logo"> <img src='../assets/images/FIXX_Copy.png' height='150px' width='150px'>
 	</div>
 	</center>
 <div class="col-md-5 col-sm-4 col-xs-6"> 

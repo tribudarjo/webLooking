@@ -90,7 +90,7 @@
 	     <div class="clearfix"></div>
       </div> <!-- end login -->
 	       <div class="clearfix">
-		   <br><br><br><br><br><br><br><div class="logo"> <img src='../assets/images/FIXX Copy.png' height='190px' width='200px'> </div> 
+		   <br><br><br><br><br><br><br><div class="logo"> <img src='../assets/images/FIXX_Copy.png' height='190px' width='200px'> </div> 
 		   </div>
 		  
             

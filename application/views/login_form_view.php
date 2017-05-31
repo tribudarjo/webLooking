@@ -43,7 +43,7 @@
         <div class="clearfix"></div>
 
       </div> <!-- end login -->
-      <div class="logo"> <img src='../assets/images/FIXX Copy.png' height='190px' width='190px'> 
+      <div class="logo"> <img src='../assets/images/FIXX_Copy.png' height='190px' width='190px'> 
 </body>
           
           <div class="clearfix"></div>
