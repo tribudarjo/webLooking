@@ -12,11 +12,23 @@
 </head>
 <body>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-
+<br><br>
 <div class="container">
 <center>
+<h1>Konfirmasi</h1>
 <table>
-<tr><td>Nama Mobil</td><td>:</td><td><?php echo $data -> nama_mobil; ?></td></tr>
+ <?php
+        foreach ($rows1 as $row) { 
+		?>
+<tr><td>Nama Mobil</td><td>:</td><td><?php echo $row -> nama_mobil; ?></td></tr>
+<tr><td>Tanggal Sewa</td><td>:</td><td><?php echo $row -> tanggal_sewa; ?></td></tr>
+<tr><td>Jam Sewa</td><td>:</td><td><?php echo $row -> jam_pinjam; ?></td></tr>
+<tr><td>Tanggal Kembali</td><td>:</td><td><?php echo $row -> tanggal_kembali; ?></td></tr>
+<tr><td>Jam Kembali</td><td>:</td><td><?php echo $row -> jam_kembali; ?></td></tr>
+<tr><td colspan="3" align="center"><a href="booking"><input type="button" name="oke" value="Konfirmasi"></a></td></tr>
+<tr><td colspan="3" align="center"><a href="konfirmasi/hapus/<?php echo $row->id_booking;?>"><input type="button" name="batal" value="Batal"></a></td></tr>
+
+<?php } ?>
 </table>
 </center>
 </div>

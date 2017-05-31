@@ -25,15 +25,20 @@ class konfirmasi extends CI_Controller{
 				unset($_SESSION['password']);
 			}else{
 				$rows = $this -> model -> read();
-				$data_booking = $this -> booking -> read();
+				$rows1 = $this -> booking -> dataBooking();
 				$this->load->view('menu', ['rows'=>$rows]);
-				//$data['booking'] = $this -> konfirmasi_model -> read();
-				$this->load->view('konfirmasi_view', ['data'=>$data_booking]);
-				//$this->load->view('konfirmasi_view', $data);
+				$this->load->view('konfirmasi_view', ['rows1'=>$rows1]);
 			}
 		}else{
 			$this->load->view('login_form_view');
 		}
+	}
+	
+	public function hapus($id_booking){
+				$this -> booking -> id_booking = $id_booking;
+				$this -> booking -> delete();
+				redirect('booking');
+
 	}
 }
 ?>
