@@ -15,7 +15,9 @@
 <br><br>
 <div class="container">
 <center>
-<h1>Konfirmasi</h1>
+<h2>Konfirmasi</h2>
+<div class="logo"> <img src='../assets/images/FIXX Copy.png' height='150px' width='150px'>
+	</div>
 <table>
  <?php
         foreach ($rows1 as $row) { 
@@ -25,6 +27,7 @@
 <tr><td>Jam Sewa</td><td>:</td><td><?php echo $row -> jam_pinjam; ?></td></tr>
 <tr><td>Tanggal Kembali</td><td>:</td><td><?php echo $row -> tanggal_kembali; ?></td></tr>
 <tr><td>Jam Kembali</td><td>:</td><td><?php echo $row -> jam_kembali; ?></td></tr>
+<tr><td colspan="3"><?php echo anchor('konfirmasi/Syarat/','Lihat syarat dan ketentuan', array('target' => '_blank')); ?></td></tr>
 <tr><td colspan="3" align="center"><a href="booking"><input type="button" name="oke" value="Konfirmasi"></a></td></tr>
 <tr><td colspan="3" align="center"><a href="konfirmasi/hapus/<?php echo $row->id_booking;?>"><input type="button" name="batal" value="Batal"></a></td></tr>
 

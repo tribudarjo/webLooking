@@ -14,7 +14,10 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 
 <div class="container">
-<h1>Penyewaan | LOOKING</h1>
+<center>
+<h2>Penyewaan</h2>
+<div class="logo"> <img src='../assets/images/FIXX Copy.png' height='150px' width='150px'>
+	</div>
 <form action="<?php echo base_url().'index.php/booking/tambah_aksi';?>" method="post">
 <table style="margin:20px auto;">
 <tr>
@@ -91,6 +94,7 @@
 </table>
 <input type="text" name="id_member" hidden="true" value="<?php foreach($rows as $row){echo $row -> id_member;}?>">
 </form>
+</center>
 </div>
 </body>
 </html>

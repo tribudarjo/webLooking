@@ -20,8 +20,11 @@ else {
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <div class="w3-container">
 <br>
-<h1>Daftar Mobil</h1>
-
+<center>
+<h2>Daftar Mobil</h2>
+<div class="logo"> <img src='../assets/images/FIXX Copy.png' height='150px' width='150px'>
+	</div>
+	</center>
 <div class="col-md-5 col-sm-4 col-xs-6"> 
     <table width="100%" class="w3-table"> 
 	<style>
@@ -36,7 +39,7 @@ th, td {
     border-bottom: 2px solid #ddd;
 }
 </style>
-<br><br>
+
     <thead>
       <tr>
  <th> Gambar Mobil </th>

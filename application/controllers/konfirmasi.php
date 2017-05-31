@@ -40,5 +40,9 @@ class konfirmasi extends CI_Controller{
 				redirect('booking');
 
 	}
+	
+	public function Syarat(){
+		$this -> load -> view('syarat_ketentuan_view');
+	}
 }
 ?>

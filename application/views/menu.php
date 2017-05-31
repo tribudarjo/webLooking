@@ -2,7 +2,8 @@
 
     <div id="sidebar-wrapper">
         <ul id="sidebar_menu" class="sidebar-nav">
-           <li class="sidebar-brand"><span class="fa fa-home"></span><a href="#"> LOOKING</a></li>
+           <li class="sidebar-brand"><a href="#"><div class="logo"> <img src='../assets/images/FIXX Copy.png' height='150px' width='150px'>
+	</div></a></li>
         </ul>
         <ul class="sidebar-nav" id="sidebar">
 		<li>Hai, <?php
