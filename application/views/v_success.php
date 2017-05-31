@@ -4,7 +4,7 @@
  <head>
    <meta charset="UTF-8">
    <title>
-     Notifikasi | Tutorial Simple Login Register CodeIgniter @ http://recodeku.blogspot.com
+     Register
    </title>
  </head>
  <body>
